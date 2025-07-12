@@ -133,25 +133,6 @@ classDiagram
         +press()
     }
     
-    enum Direction {
-        UP
-        DOWN
-        IDLE
-    }
-    
-    enum Status {
-        IDLE
-        MOVING_UP
-        MOVING_DOWN
-        LOADING
-        MAINTENANCE
-    }
-    
-    enum RequestType {
-        EXTERNAL
-        INTERNAL
-    }
-    
     Main --> Building
     Building --> Floor
     Building --> ElevatorManager
@@ -161,10 +142,6 @@ classDiagram
     ElevatorController --> ElevatorRequest
     Floor --> ExternalButton
     Elevator --> InternalButton
-    ElevatorRequest --> Direction
-    ElevatorRequest --> RequestType
-    Elevator --> Status
-    Elevator --> Direction
 ```
 
 ## 🏢 Class Descriptions
