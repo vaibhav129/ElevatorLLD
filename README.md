@@ -60,10 +60,10 @@ classDiagram
     
     class Building {
         -ElevatorManager elevatorManager
-        -List~Floor~ floors
-        -List~Elevator~ elevators
+        -List floors
+        -List elevators
         -int totalFloors
-        +Building(List~Floor~, int)
+        +Building(List, int)
         +ExternalRequest(int, Direction)
         +addInternalRequest(int, int)
         +startAutomaticProcessing()
@@ -81,7 +81,7 @@ classDiagram
     }
     
     class ElevatorManager {
-        -List~ElevatorController~ controllers
+        -List controllers
         +ElevatorManager()
         +assignRequest(ElevatorRequest)
         +chooseElevator(ElevatorRequest)
@@ -90,7 +90,7 @@ classDiagram
     
     class ElevatorController {
         -Elevator elevator
-        -Queue~Integer~ requestQueue
+        -Queue requestQueue
         +ElevatorController(Elevator)
         +addRequest(int)
         +handleRequest(ElevatorRequest)
@@ -102,7 +102,7 @@ classDiagram
         -int elevatorId
         -Status status
         -Direction direction
-        -List~InternalButton~ buttonList
+        -List buttonList
         -int currentFloor
         +Elevator(int, int, int)
         +openDoors()
@@ -438,9 +438,7 @@ building.addInternalRequest(1, 7);
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
