@@ -384,22 +384,7 @@ building.addInternalRequest(1, 7);
 // ... add more requests as needed
 ```
 
-## 🧪 Testing Scenarios
 
-### Scenario 1: Basic Operation
-- Single elevator, multiple floors
-- Sequential external requests
-- Verify proper elevator movement
-
-### Scenario 2: Multi-Elevator Coordination
-- Multiple elevators
-- Concurrent requests
-- Verify intelligent elevator selection
-
-### Scenario 3: Complex Request Patterns
-- Mixed external and internal requests
-- Requests in different directions
-- Verify efficient processing
 
 ## 📈 Performance Considerations
 
@@ -407,17 +392,6 @@ building.addInternalRequest(1, 7);
 - **Space Complexity**: O(m) for request queues, where m is number of pending requests
 - **Scalability**: System can handle multiple elevators and floors efficiently
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-
-
-## 👨‍💻 Author
 
 **Vaibhav** - [GitHub Profile](https://github.com/vaibhav129)
 
